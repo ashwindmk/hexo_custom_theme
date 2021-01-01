@@ -1,0 +1,15 @@
+<h3>This is a post</h3>
+
+<h2><%- titlecase(page.title) %></h2>
+<p>Posted on: <%- date(page.date, 'DD MM YYYY') %></p>
+
+<% if (page.author && page.author == "Ashwin Dinesh") { %>
+    <p>By Me</p>
+<% } else if (page.author) { %>
+    <p> By <%- page.author %> </p>
+<% } else { %>
+    <p> By Anonymous </p>
+<% } %>
+<hr/>
+
+<%- page.content %>
