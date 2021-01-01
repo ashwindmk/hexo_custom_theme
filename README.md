@@ -1,3 +1,3 @@
-# Hexom Custom Theme
+# Hexo Custom Theme
 
 Demo project.
